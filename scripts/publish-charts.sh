@@ -7,9 +7,9 @@ TOOLS_DIR="${BUILD_DIR}/tools"
 STABLE="${GIT_REPO_ROOT}/stable"
 PACKAGE_DIR="${GIT_REPO_ROOT}/build"
 export PATH="${TOOLS_DIR}:${PATH}"
-VERSION="git describe --tags --always --dirty"
+VERSION="$(git describe --tags --always --dirty)"
 
-if $(echo $VERSION) | grep -Eq "^v[0-9]+(\.[0-9]+){2}$"; then
+if grep -Eq "^v[0-9]+(\.[0-9]+){2}$" <<< $VERSION; then
     git fetch --all
     git config user.email eks-bot@users.noreply.github.com
     git config user.name eks-bot
@@ -26,4 +26,4 @@ else
     echo "Not a valid semver release tag! Skip charts publish"
     exit 1
 fi
- 
+
