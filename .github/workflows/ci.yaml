@@ -3,7 +3,7 @@ on:
   pull_request:
   workflow_dispatch:
 jobs:
-  release:
+  ci:
     runs-on: ubuntu-latest
     if: github.repository == 'bwagner5/eks-charts-shadow'
     steps:
