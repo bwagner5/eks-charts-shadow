@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/aws/eks-charts.svg?style=svg)](https://circleci.com/gh/aws/eks-charts)
+![EKS Charts](https://github.com/github/docs/actions/workflows/release.yaml/badge.svg)
 
 ## EKS Charts
 
