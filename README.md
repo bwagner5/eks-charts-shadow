@@ -1,4 +1,4 @@
-![EKS Charts](https://github.com/github/docs/actions/workflows/release.yaml/badge.svg)
+![EKS Charts](https://github.com/bwagner5/eks-charts-shadow/actions/workflows/release.yaml/badge.svg)
 
 ## EKS Charts
 
